@@ -5,14 +5,16 @@ export const ProductContainer = styled.div`
   padding: 80px 100px;
   @media (max-width: 1080px) {
     flex-direction: column;
-    padding: 2rem;
+    padding: 4rem 1rem 1rem;
   }
 `
 
 export const StyledImgContainer = styled.div`
   display: flex;
-  @media (max-width: 600px) {
-    flex-direction: column;
+
+  @media (max-width: 1080px) {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 `
 
@@ -22,10 +24,10 @@ export const ImagesBlock = styled.div`
     z-index: 2;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    min-width: 320px;
+    max-width: 360px;
   }
   
-  width: 100%;
   max-width: 80px;
   margin-right: 10px;
 `
@@ -79,14 +81,20 @@ export const StyledImg = styled.div<{active: boolean}>`
       box-shadow: ${props => !!props.active ? 'none': '0 0.5px 4px 1px rgba(34, 60, 80, 0.2)'};
     }
   }
+  @media (max-width: 1080px){
+    img {
+      margin: 12px 12px 0 0;
+      max-height: 80px;
+    }
+  }
 `
 
 export const MainCardBlock = styled.div`
   max-width: 100%;
-  margin-right: 220px;
-  margin-left: 40px;
+  margin-left: auto;
   @media (max-width: 1080px) {
     margin: 1rem;
+    padding-top: 0.5rem;
   }
   display: flex;
   justify-content: space-between;
@@ -97,6 +105,7 @@ export const MainImg = styled.div`
   width: 100%;
   position: relative;
   margin-left: 0.35rem;
+  z-index: 1;
 
   div {
     position: absolute;
@@ -106,8 +115,8 @@ export const MainImg = styled.div`
     right: 0;
     text-align: center;
     display: flex;
-    padding-top: 250px;
     justify-content: center;
+    align-items: center;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.74);
     color: rgba(141, 143, 154, 0.64);
@@ -145,6 +154,9 @@ export const CardDescriptionBlock = styled.div`
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 1.25rem;
+  }
+  @media (max-width: 1080px){
+    margin-left: 0;
   }
 `
 

@@ -28,7 +28,7 @@ class Cart extends Component<any, IState> {
 	}
 
 	changeStyles = () => {
-		if (document.body.clientHeight - document.documentElement.clientHeight) {
+		if (document.body.clientHeight - document.documentElement.clientHeight && window.innerWidth > 1080) {
 			if (!this.state.isOpen) {
 				document.body.style.position = 'static';
 				document.body.style.overflow = 'auto';

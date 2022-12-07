@@ -8,6 +8,9 @@ export const AppBar = styled.header`
 
   @media (max-width: 1080px) {
     padding: 0 1rem;
+    position: relative;
+    left: 0;
+    right: 0;
   }
 `
 

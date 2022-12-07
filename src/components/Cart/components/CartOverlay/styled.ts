@@ -7,6 +7,12 @@ export const StyledCartOverlay = styled.div`
   padding: 1rem 1rem;
   width: 325px;
   max-height: 627px;
+  @media (max-width: 1400px){
+    right: 2rem;
+  }
+  @media (max-width: 600px){
+    right: 0;
+  }
 `
 export const CartOverlayButtonsBlock = styled.div`
   display: flex;
