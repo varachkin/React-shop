@@ -28,15 +28,19 @@ class Cart extends Component<any, IState> {
 	}
 
 	changeStyles = () => {
-		if (document.body.clientHeight - document.documentElement.clientHeight && window.innerWidth > 1080) {
+		if (document.body.clientHeight - document.documentElement.clientHeight) {
 			if (!this.state.isOpen) {
 				document.body.style.position = 'static';
 				document.body.style.overflow = 'auto';
-				document.body.style.paddingRight = '0';
+				if(window.innerWidth > 1080){
+					document.body.style.paddingRight = '0';
+				}
 			} else {
 				document.body.style.overflow = 'hidden';
 				document.body.style.position = 'fixed';
-				document.body.style.paddingRight = '17px';
+				if(window.innerWidth > 1080){
+					document.body.style.paddingRight = '17px';
+				}
 			}
 		}
 	}
