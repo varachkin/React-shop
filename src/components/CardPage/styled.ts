@@ -3,13 +3,29 @@ import styled from "styled-components";
 export const ProductContainer = styled.div`
   display: flex;
   padding: 80px 100px;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    padding: 2rem;
+  }
 `
 
 export const StyledImgContainer = styled.div`
-	display: flex;
+  display: flex;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `
 
 export const ImagesBlock = styled.div`
+  position: relative;
+  @media (max-width: 1080px) {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  width: 100%;
   max-width: 80px;
   margin-right: 10px;
 `
@@ -69,12 +85,16 @@ export const MainCardBlock = styled.div`
   max-width: 100%;
   margin-right: 220px;
   margin-left: 40px;
+  @media (max-width: 1080px) {
+    margin: 1rem;
+  }
   display: flex;
   justify-content: space-between;
 `
 
 export const MainImg = styled.div`
-  width: 560px;
+  max-width: 560px;
+  width: 100%;
   position: relative;
   margin-left: 0.35rem;
 
@@ -104,7 +124,7 @@ export const MainImg = styled.div`
 
 export const CardDescriptionBlock = styled.div`
   width: 292px;
-  margin-left: 100px;
+  margin-left: 1rem;
 
   h4 {
     font-size: 30px;
