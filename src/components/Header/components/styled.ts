@@ -8,7 +8,9 @@ export const ListNavigation = styled.ul`
     text-decoration: none;
   }
   @media (max-width: 1080px) {
-    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 export const StyledLI = styled.li`

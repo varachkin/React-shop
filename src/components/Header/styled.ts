@@ -13,4 +13,7 @@ export const AppBar = styled.header`
 
 export const StyledNavigation = styled.nav`
   display: flex;
+  @media (max-width: 1080px) {
+    display: none;
+  }
 `;
