@@ -7,7 +7,9 @@ export const ListNavigation = styled.ul`
   a {
     text-decoration: none;
   }
-  
+  @media (max-width: 1080px) {
+    display: none;
+  }
 `
 export const StyledLI = styled.li`
   height: 100%;
