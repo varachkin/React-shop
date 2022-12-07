@@ -10,7 +10,7 @@ export const BurgerStyled = styled.div`
     position: absolute;
     z-index: 10;
     top: -0.75rem;
-    left: -0.5rem;
+    left: 0.25rem;
   }
 
   span:hover {
