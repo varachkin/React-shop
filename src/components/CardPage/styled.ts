@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProductContainer = styled.div`
   display: flex;
   padding: 80px 100px;
+  justify-content: space-between;
   @media (max-width: 1080px) {
     flex-direction: column;
     padding: 4rem 1rem 1rem;
@@ -91,7 +92,7 @@ export const StyledImg = styled.div<{active: boolean}>`
 
 export const MainCardBlock = styled.div`
   max-width: 100%;
-  margin-left: auto;
+  //margin-left: auto;
   @media (max-width: 1080px) {
     margin: 1rem;
     padding-top: 0.5rem;
@@ -101,7 +102,7 @@ export const MainCardBlock = styled.div`
 `
 
 export const MainImg = styled.div`
-  max-width: 560px;
+  //max-width: 560px;
   width: 100%;
   position: relative;
   margin-left: 0.35rem;
@@ -109,10 +110,8 @@ export const MainImg = styled.div`
 
   div {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 100%;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;

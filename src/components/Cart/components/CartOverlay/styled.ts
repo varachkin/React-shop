@@ -4,7 +4,7 @@ export const StyledCartOverlay = styled.div`
   position: absolute;
   right: 18rem;
   background-color: #ffffff;
-  padding: 1rem 1rem;
+  padding: 0.25rem 1rem 1rem;
   width: 325px;
   max-height: 627px;
   @media (max-width: 1400px){
@@ -20,9 +20,11 @@ export const CartOverlayButtonsBlock = styled.div`
   padding: 1rem 0;
 `
 export const CartOverlayProductsContainer = styled.div`
-  max-height: 400px;
+  max-height: 385px;
   overflow: auto;
-
+  @media (max-width: 374px){
+    max-height: 200px;
+  }
   ::-webkit-scrollbar {
     width: 6px;
   }
